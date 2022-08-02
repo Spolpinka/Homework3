@@ -2,21 +2,14 @@ import javax.sound.midi.Soundbank;
 
 public class HW2 {
     public static void main(String[] args) {
-        int bananaNumb = 5;
-        int bananaWeight = 80;
-        int milkNumb = 200;
-        int milkWeight100ml = 105;
-        int icecreamNumb = 2;
-        int icecreamWeight = 100;
-        int eggNumb = 4;
-        int eggWeight = 70;
-//решение
-//вес в граммах
-        int summaryGramms = (bananaNumb*bananaWeight)+(milkNumb*milkWeight100ml/100)+(icecreamNumb*icecreamWeight)+(eggNumb*eggWeight);
-//вес в килограммах
-        float summaryKilogr = summaryGramms/1000f;
-        System.out.println("Общий вес спорт-завтрака " + summaryKilogr + " кг.");
-
+        int target = 7;
+        int firstVar = 250;
+        int secondVar = 500;
+        int firstSituation = target*1000/firstVar;
+        int secondSituation = target*1000/secondVar;
+        System.out.println("Дней до достижения цели при похудении на 250 гр. ежедневно - " + firstSituation);
+        System.out.println("Дней до достижения цели при похудении на 500 гр. ежедневно - " + secondSituation);
+        System.out.println("Среднее количество до достижения цели - " + (firstSituation+secondSituation)/2);
 
     }
 }
